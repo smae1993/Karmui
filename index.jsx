@@ -5,7 +5,7 @@ import React from "react";
 import {cache} from "react";
 import { prefixer } from "stylis";
 import rtlPlugin from 'stylis-plugin-rtl';
-import Colors from "@/Constants/Colors.jsx";
+import Colors from "./Constants/Colors.jsx";
 import * as locales from '@mui/material/locale';
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
