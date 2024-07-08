@@ -1,6 +1,6 @@
 import { CacheProvider } from "@emotion/react";
 import createCache from '@emotion/cache';
-import { ThemeProvider, createTheme } from "@mui/material";
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import React from "react";
 import {cache} from "react";
 import { prefixer } from "stylis";
@@ -65,7 +65,9 @@ export default function Karmui({children}) {
 
 
     return (
-        <ColorModeContext.Provider value={[mode, setMode]}>
+        <>
+            <CssBaseline/>
+            <ColorModeContext.Provider value={[mode, setMode]}>
             <LocaleContext.Provider value={[locale, setLocale]}>
             <CacheProvider value={locale == "faIR" ? cacheRtl : cacheLtr}>
                 <ThemeProvider theme={themeWithLocale}>
@@ -77,6 +79,7 @@ export default function Karmui({children}) {
 
             </LocaleContext.Provider>
         </ColorModeContext.Provider>
+        </>
 
     );
 }
