@@ -30,7 +30,7 @@ i18n
 });
 
 
-export default function Karmui({children}) {
+export default function Karmui2({children}) {
     const cookies = new Cookies();
     const [mode, setMode] = React.useState(cookies.get("mode") ?? "light");
     const [locale, setLocale] = React.useState(cookies.get("locale") ?? 'enUS');
