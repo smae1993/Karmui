@@ -1,5 +1,5 @@
 // import { CacheProvider } from "@emotion/react";
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material';
 // import theme from "./theme";
 import { SnackbarProvider } from "notistack";
 
@@ -7,8 +7,6 @@ import { SnackbarProvider } from "notistack";
 
 export default function Karmui({children, theme}) {
     return <ThemeProvider theme={theme}>
-            <SnackbarProvider>
-                {children}
-            </SnackbarProvider>
+            {children}
         </ThemeProvider>
 }
