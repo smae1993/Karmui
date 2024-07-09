@@ -5,11 +5,9 @@ import { SnackbarProvider } from "notistack";
 
 
 export default function Karmui({children}) {
-    return <>
-        <ThemeProvider theme={theme}>
+    return <ThemeProvider theme={theme}>
             <SnackbarProvider>
                 {children}
             </SnackbarProvider>
         </ThemeProvider>
-    </>
 }
