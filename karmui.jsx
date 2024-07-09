@@ -4,5 +4,5 @@ import { ThemeProvider } from "@mui/material";
 import { SnackbarProvider } from "notistack";
 
 export default function Karmui({ children, theme }) {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return (<ThemeProvider theme={theme}>{children}</ThemeProvider>);
 }
