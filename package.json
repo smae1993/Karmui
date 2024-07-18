@@ -2,6 +2,7 @@
   "name": "karmui",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "karmui.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
